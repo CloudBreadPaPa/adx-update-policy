@@ -1,0 +1,216 @@
+// 테이블 생성
+.create table malware_table (MachineIdentifier:string, ProductName:string, EngineVersion:string, AppVersion:string, AvSigVersion:string, IsBeta:int, RtpStateBitfield:real, IsSxsPassiveMode:int, DefaultBrowsersIdentifier:real, AVProductStatesIdentifier:real, AVProductsInstalled:real, AVProductsEnabled:real, HasTpm:int, CountryIdentifier:int, CityIdentifier:real, OrganizationIdentifier:real, GeoNameIdentifier:real, LocaleEnglishNameIdentifier:int, Platform:string, Processor:string, OsVer:string, OsBuild:int, OsSuite:int, OsPlatformSubRelease:string, OsBuildLab:string, SkuEdition:string, IsProtected:real, AutoSampleOptIn:int, PuaMode:string, SMode:real, IeVerIdentifier:real, SmartScreen:string, Firewall:real, UacLuaenable:real, Census_MDC2FormFactor:string, Census_DeviceFamily:string, Census_OEMNameIdentifier:real, Census_OEMModelIdentifier:real, Census_ProcessorCoreCount:real, Census_ProcessorManufacturerIdentifier:real, Census_ProcessorModelIdentifier:real, Census_ProcessorClass:string, Census_PrimaryDiskTotalCapacity:real, Census_PrimaryDiskTypeName:string, Census_SystemVolumeTotalCapacity:real, Census_HasOpticalDiskDrive:int, Census_TotalPhysicalRAM:real, Census_ChassisTypeName:string, Census_InternalPrimaryDiagonalDisplaySizeInInches:real, Census_InternalPrimaryDisplayResolutionHorizontal:real, Census_InternalPrimaryDisplayResolutionVertical:real, Census_PowerPlatformRoleName:string, Census_InternalBatteryType:string, Census_InternalBatteryNumberOfCharges:real, Census_OSVersion:string, Census_OSArchitecture:string, Census_OSBranch:string, Census_OSBuildNumber:int, Census_OSBuildRevision:int, Census_OSEdition:string, Census_OSSkuName:string, Census_OSInstallTypeName:string, Census_OSInstallLanguageIdentifier:real, Census_OSUILocaleIdentifier:int, Census_OSWUAutoUpdateOptionsName:string, Census_IsPortableOperatingSystem:int, Census_GenuineStateName:string, Census_ActivationChannel:string, Census_IsFlightingInternal:real, Census_IsFlightsDisabled:real, Census_FlightRing:string, Census_ThresholdOptIn:real, Census_FirmwareManufacturerIdentifier:real, Census_FirmwareVersionIdentifier:real, Census_IsSecureBootEnabled:int, Census_IsWIMBootEnabled:real, Census_IsVirtualDevice:real, Census_IsTouchEnabled:int, Census_IsPenCapable:int, Census_IsAlwaysOnAlwaysConnectedCapable:real, Wdft_IsGamer:real, Wdft_RegionIdentifier:real, HasDetections:int)
+
+// mapping 생성
+.create table malware_table ingestion csv mapping "malware_table_mapping"
+'['
+'{"column":"MachineIdentifier","DataType":"string","Properties":{"Ordinal":"0"}},'
+'{"column":"ProductName","DataType":"string","Properties":{"Ordinal":"1"}},'
+'{"column":"EngineVersion","DataType":"string","Properties":{"Ordinal":"2"}},'
+'{"column":"AppVersion","DataType":"string","Properties":{"Ordinal":"3"}},'
+'{"column":"AvSigVersion","DataType":"string","Properties":{"Ordinal":"4"}},'
+'{"column":"IsBeta","DataType":"int","Properties":{"Ordinal":"5"}},'
+'{"column":"RtpStateBitfield","DataType":"real","Properties":{"Ordinal":"6"}},'
+'{"column":"IsSxsPassiveMode","DataType":"int","Properties":{"Ordinal":"7"}},'
+'{"column":"DefaultBrowsersIdentifier","DataType":"real","Properties":{"Ordinal":"8"}},'
+'{"column":"AVProductStatesIdentifier","DataType":"real","Properties":{"Ordinal":"9"}},'
+'{"column":"AVProductsInstalled","DataType":"real","Properties":{"Ordinal":"10"}},'
+'{"column":"AVProductsEnabled","DataType":"real","Properties":{"Ordinal":"11"}},'
+'{"column":"HasTpm","DataType":"int","Properties":{"Ordinal":"12"}},'
+'{"column":"CountryIdentifier","DataType":"int","Properties":{"Ordinal":"13"}},'
+'{"column":"CityIdentifier","DataType":"real","Properties":{"Ordinal":"14"}},'
+'{"column":"OrganizationIdentifier","DataType":"real","Properties":{"Ordinal":"15"}},'
+'{"column":"GeoNameIdentifier","DataType":"real","Properties":{"Ordinal":"16"}},'
+'{"column":"LocaleEnglishNameIdentifier","DataType":"int","Properties":{"Ordinal":"17"}},'
+'{"column":"Platform","DataType":"string","Properties":{"Ordinal":"18"}},'
+'{"column":"Processor","DataType":"string","Properties":{"Ordinal":"19"}},'
+'{"column":"OsVer","DataType":"string","Properties":{"Ordinal":"20"}},'
+'{"column":"OsBuild","DataType":"int","Properties":{"Ordinal":"21"}},'
+'{"column":"OsSuite","DataType":"int","Properties":{"Ordinal":"22"}},'
+'{"column":"OsPlatformSubRelease","DataType":"string","Properties":{"Ordinal":"23"}},'
+'{"column":"OsBuildLab","DataType":"string","Properties":{"Ordinal":"24"}},'
+'{"column":"SkuEdition","DataType":"string","Properties":{"Ordinal":"25"}},'
+'{"column":"IsProtected","DataType":"real","Properties":{"Ordinal":"26"}},'
+'{"column":"AutoSampleOptIn","DataType":"int","Properties":{"Ordinal":"27"}},'
+'{"column":"PuaMode","DataType":"string","Properties":{"Ordinal":"28"}},'
+'{"column":"SMode","DataType":"real","Properties":{"Ordinal":"29"}},'
+'{"column":"IeVerIdentifier","DataType":"real","Properties":{"Ordinal":"30"}},'
+'{"column":"SmartScreen","DataType":"string","Properties":{"Ordinal":"31"}},'
+'{"column":"Firewall","DataType":"real","Properties":{"Ordinal":"32"}},'
+'{"column":"UacLuaenable","DataType":"real","Properties":{"Ordinal":"33"}},'
+'{"column":"Census_MDC2FormFactor","DataType":"string","Properties":{"Ordinal":"34"}},'
+'{"column":"Census_DeviceFamily","DataType":"string","Properties":{"Ordinal":"35"}},'
+'{"column":"Census_OEMNameIdentifier","DataType":"real","Properties":{"Ordinal":"36"}},'
+'{"column":"Census_OEMModelIdentifier","DataType":"real","Properties":{"Ordinal":"37"}},'
+'{"column":"Census_ProcessorCoreCount","DataType":"real","Properties":{"Ordinal":"38"}},'
+'{"column":"Census_ProcessorManufacturerIdentifier","DataType":"real","Properties":{"Ordinal":"39"}},'
+'{"column":"Census_ProcessorModelIdentifier","DataType":"real","Properties":{"Ordinal":"40"}},'
+'{"column":"Census_ProcessorClass","DataType":"string","Properties":{"Ordinal":"41"}},'
+'{"column":"Census_PrimaryDiskTotalCapacity","DataType":"real","Properties":{"Ordinal":"42"}},'
+'{"column":"Census_PrimaryDiskTypeName","DataType":"string","Properties":{"Ordinal":"43"}},'
+'{"column":"Census_SystemVolumeTotalCapacity","DataType":"real","Properties":{"Ordinal":"44"}},'
+'{"column":"Census_HasOpticalDiskDrive","DataType":"int","Properties":{"Ordinal":"45"}},'
+'{"column":"Census_TotalPhysicalRAM","DataType":"real","Properties":{"Ordinal":"46"}},'
+'{"column":"Census_ChassisTypeName","DataType":"string","Properties":{"Ordinal":"47"}},'
+'{"column":"Census_InternalPrimaryDiagonalDisplaySizeInInches","DataType":"real","Properties":{"Ordinal":"48"}},'
+'{"column":"Census_InternalPrimaryDisplayResolutionHorizontal","DataType":"real","Properties":{"Ordinal":"49"}},'
+'{"column":"Census_InternalPrimaryDisplayResolutionVertical","DataType":"real","Properties":{"Ordinal":"50"}},'
+'{"column":"Census_PowerPlatformRoleName","DataType":"string","Properties":{"Ordinal":"51"}},'
+'{"column":"Census_InternalBatteryType","DataType":"string","Properties":{"Ordinal":"52"}},'
+'{"column":"Census_InternalBatteryNumberOfCharges","DataType":"real","Properties":{"Ordinal":"53"}},'
+'{"column":"Census_OSVersion","DataType":"string","Properties":{"Ordinal":"54"}},'
+'{"column":"Census_OSArchitecture","DataType":"string","Properties":{"Ordinal":"55"}},'
+'{"column":"Census_OSBranch","DataType":"string","Properties":{"Ordinal":"56"}},'
+'{"column":"Census_OSBuildNumber","DataType":"int","Properties":{"Ordinal":"57"}},'
+'{"column":"Census_OSBuildRevision","DataType":"int","Properties":{"Ordinal":"58"}},'
+'{"column":"Census_OSEdition","DataType":"string","Properties":{"Ordinal":"59"}},'
+'{"column":"Census_OSSkuName","DataType":"string","Properties":{"Ordinal":"60"}},'
+'{"column":"Census_OSInstallTypeName","DataType":"string","Properties":{"Ordinal":"61"}},'
+'{"column":"Census_OSInstallLanguageIdentifier","DataType":"real","Properties":{"Ordinal":"62"}},'
+'{"column":"Census_OSUILocaleIdentifier","DataType":"int","Properties":{"Ordinal":"63"}},'
+'{"column":"Census_OSWUAutoUpdateOptionsName","DataType":"string","Properties":{"Ordinal":"64"}},'
+'{"column":"Census_IsPortableOperatingSystem","DataType":"int","Properties":{"Ordinal":"65"}},'
+'{"column":"Census_GenuineStateName","DataType":"string","Properties":{"Ordinal":"66"}},'
+'{"column":"Census_ActivationChannel","DataType":"string","Properties":{"Ordinal":"67"}},'
+'{"column":"Census_IsFlightingInternal","DataType":"real","Properties":{"Ordinal":"68"}},'
+'{"column":"Census_IsFlightsDisabled","DataType":"real","Properties":{"Ordinal":"69"}},'
+'{"column":"Census_FlightRing","DataType":"string","Properties":{"Ordinal":"70"}},'
+'{"column":"Census_ThresholdOptIn","DataType":"real","Properties":{"Ordinal":"71"}},'
+'{"column":"Census_FirmwareManufacturerIdentifier","DataType":"real","Properties":{"Ordinal":"72"}},'
+'{"column":"Census_FirmwareVersionIdentifier","DataType":"real","Properties":{"Ordinal":"73"}},'
+'{"column":"Census_IsSecureBootEnabled","DataType":"int","Properties":{"Ordinal":"74"}},'
+'{"column":"Census_IsWIMBootEnabled","DataType":"real","Properties":{"Ordinal":"75"}},'
+'{"column":"Census_IsVirtualDevice","DataType":"real","Properties":{"Ordinal":"76"}},'
+'{"column":"Census_IsTouchEnabled","DataType":"int","Properties":{"Ordinal":"77"}},'
+'{"column":"Census_IsPenCapable","DataType":"int","Properties":{"Ordinal":"78"}},'
+'{"column":"Census_IsAlwaysOnAlwaysConnectedCapable","DataType":"real","Properties":{"Ordinal":"79"}},'
+'{"column":"Wdft_IsGamer","DataType":"real","Properties":{"Ordinal":"80"}},'
+'{"column":"Wdft_RegionIdentifier","DataType":"real","Properties":{"Ordinal":"81"}},'
+'{"column":"HasDetections","DataType":"int","Properties":{"Ordinal":"82"}}'
+']'
+
+
+.ingest into table malware_table 'https://<YOUR-STORAGE-ACCOUNT-NAME>.blob.core.windows.net/bulk-insert/train_10000.csv?sv=2020-04-08&st=2021-10-22T04%3A46%3A56Z&se=2021-10-23T04%3A46%3A56Z&sr=b&sp=r&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXX' 
+with(ignoreFirstRecord=True)
+ 
+malware_table | take 10 // test query
+
+malware_table 
+| summarize Count=count()
+
+
+// update policy 체크
+.show table malware_table policy update 
+
+// 일반 function 생성
+.create function 
+with (docstring = 'fetch malware table numver')
+fetch_malware_data(num_of_data:int)  {malware_table | limit num_of_data}
+
+// function 실행
+fetch_malware_data(10)
+
+
+// update policy function 생성
+// .drop function malware_table_fetch_versions
+.create function malware_table_fetch_versions()
+{
+    malware_table
+    | project MachineIdentifier, ProductName, EngineVersion, AppVersion, ctime=now()
+}
+
+// Create the target table (if it doesn't already exist)
+// .drop table malware_version_table
+.set-or-append malware_version_table <| malware_table_fetch_versions() | limit 0
+
+
+// Use update policy on table DerivedTableX
+.alter table malware_version_table policy update
+@'[{"IsEnabled": true, "Source": "malware_table", "Query": "malware_table_fetch_versions()", "IsTransactional": false, "PropagateIngestionProperties": false}]'
+
+// 테스트 조회
+malware_version_table
+| summarize cnt=count() 
+// 현재 0건
+
+// ingest를 malware_table로 수행
+.ingest into table malware_table 'https://<YOUR-STORAGE-ACCOUNT-NAME>.blob.core.windows.net/bulk-insert/train_10000.csv?sv=2020-04-08&st=2021-10-22T04%3A46%3A56Z&se=2021-10-23T04%3A46%3A56Z&sr=b&sp=r&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXX' 
+with(ignoreFirstRecord=True)
+
+// 테스트 조회
+malware_version_table
+| summarize cnt=count() 
+// 현재 9999건 
+
+// 테스트 조회
+malware_version_table | limit 5
+
+
+// ingest를 malware_table로 추가 수행 수행
+.ingest into table malware_table 'https://<YOUR-STORAGE-ACCOUNT-NAME>.blob.core.windows.net/bulk-insert/train_10000.csv?sv=2020-04-08&st=2021-10-22T04%3A46%3A56Z&se=2021-10-23T04%3A46%3A56Z&sr=b&sp=r&sig=XXXXXXXXXXXXXXXXXXXXXXXXXXXX' 
+with(ignoreFirstRecord=True)
+
+// 테스트 조회
+malware_version_table
+| summarize cnt=count() 
+// 현재 19998 건 
+
+// 테스트 조회
+malware_version_table | limit 5
+
+
+// 테스트 조회
+malware_version_table
+| summarize cnt=count() by ctime
+
+// 그렇다면, function은 malware_table 전체를 보고 있는데, 1만건에서 추가 1만건 하면 2만건, 또는 3만건씩 들어오나?
+결과.
+ctime	cnt
+2021-10-22 05:22:30.3608684	9999
+2021-10-22 05:23:13.9418225	9999
+2021-10-22 05:29:05.5809833	9999
+
+// 즉, 신규 데이터에 대해서만 처리된다.
+// CSV는 잘 된다. 그럼 스트리밍은?
+
+
+
+////////////////////////////////////////////////////////////////////////
+// 스트리밍 처리
+// https://www.sqler.com/board_Azure/1102239  내용을 참조해 kafka 메세지 전송
+
+// .drop table dw_evthub_ingest ifexists
+.create table dw_evthub_ingest (product_num: int, product_price: int, product_description: string, product_production_dt:datetime)
+ // .show table dw_evthub_ingest
+
+// .drop table dw_evthub_ingest ingestion json mapping "evthub_ingest_mapping" 
+.create table dw_evthub_ingest ingestion json mapping 'evthub_ingest_mapping' '[{"column":"product_num", "Properties": {"Path": "$.product_num", "datatype":"int"}}, {"column":"product_price", "Properties": {"Path":"$.product_price", "datatype":"int"}} ,{"column":"product_description", "Properties": {"Path":"$.product_description", "datatype":"string"}}, {"column":"product_production_dt", "Properties": {"Path":"$.product_production_dt", "datatype":"datetime"}}]'
+ // .show table dw_evthub_ingest ingestion mappings
+
+// ingest 설정을 한다.
+// 설정이 완료되면 데이터가 잘 들어오는지 체크한다.
+dw_evthub_ingest
+
+// update policy를 위한 function을 추가한다.
+// .drop function ehub_table_get_product
+.create function ehub_table_get_product()
+{
+    dw_evthub_ingest
+    | project product_num, product_price, ctime=now()
+}
+
+// Create the target table (if it doesn't already exist)
+// .drop table malware_version_table
+.set-or-append ehub_table_only_product_price <| ehub_table_get_product() | limit 0
+
+
+// Use update policy on table DerivedTableX
+.alter table ehub_table_only_product_price policy update
+@'[{"IsEnabled": true, "Source": "dw_evthub_ingest", "Query": "ehub_table_get_product()", "IsTransactional": false, "PropagateIngestionProperties": false}]'
+
+// 최종 테이블 조회
+ehub_table_only_product_price
+
+
+ehub_table_only_product_price
+| summarize cnt=count() by ctime
